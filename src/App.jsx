@@ -232,24 +232,29 @@ mentoring over 60 students and being recognized as a Most Active Speaker in 2024
             label: 'Experience',
             content: (
               <section className="experience-section">
-                <h2>Experience</h2>
-                <ul style={{textAlign: 'left', maxWidth: 700, margin: '0 auto'}}>
-                  <li><b>ML Engineering Intern, IBM Research:</b> 
-                    <ul>
-                      <li>Designed and implemented a corrective service for SQL queries, improving data reliability for internal teams.</li>
-                      <li>Deployed a prompting API to OpenShift using Helm, Tilt, and Boomerang CICD, streamlining deployment workflows.</li>
-                      <li>Configured Boomerang CICD to scan Docker images before deploying to IBM container registry, enhancing security.</li>
-                      <li>Contributed to the open-source SQLGlot project for IBM proprietary Database IBMDB2.</li>
+                <h2 style={{textAlign: 'center', marginBottom: '1.5rem'}}>Experience</h2>
+                <div style={{maxWidth: 700, margin: '0 auto'}}>
+                  <div style={{marginBottom: '2.2em'}}>
+                    <h3 style={{margin: 0, fontSize: '1.18em', color: 'var(--accent)'}}>Software Engineering Intern – IBM Research</h3>
+                    <div style={{fontSize: '1em', color: '#666', marginBottom: '0.2em'}}>Nairobi, Kenya | Jun 2024 – Aug 2024</div>
+                    <ul style={{marginTop: 0, marginBottom: 0, paddingLeft: '1.2em'}}>
+                      <li>Developed a Corrective Service for SQL queries, reducing hallucination errors in a text-to-SQL pipeline by 10%, enhancing LLM reliability.</li>
+                      <li>Automated deployment pipelines with Helm, Tilt, and Boomerang CI/CD, cutting manual DevOps work by 40%.</li>
+                      <li>Enforced secure container deployment by configuring CI/CD to pre-scan Docker images, reducing vulnerabilities.</li>
+                      <li>Contributed to open-source SQLGlot integration with IBM DB2, improving validation of AI-generated SQL queries.</li>
+                      <li>Built SQL-INSTRUCT, a dataset generator for instruction-tuning LLMs in enterprise data management workflows.</li>
                     </ul>
-                  </li>
-                  <li><b>Software Engineer, Modcom Institute of Technology:</b>
-                    <ul>
-                      <li>Developed Android and React applications for the medical industry, improving patient engagement and data collection.</li>
-                      <li>Designed and implemented scalable APIs and background workers using Python and Django.</li>
-                      <li>Collaborated with cross-functional teams to deliver robust healthcare solutions.</li>
+                  </div>
+                  <div>
+                    <h3 style={{margin: 0, fontSize: '1.18em', color: 'var(--accent)'}}>Software Engineer – Modcom Institute of Technology</h3>
+                    <div style={{fontSize: '1em', color: '#666', marginBottom: '0.2em'}}>Nairobi, Kenya | May 2021 – Apr 2023</div>
+                    <ul style={{marginTop: 0, marginBottom: 0, paddingLeft: '1.2em'}}>
+                      <li>Led the development of an Android + React health app, increasing patient accessibility by 30%, enabling home delivery of medication.</li>
+                      <li>Designed robust REST APIs and async background workers using Python (Django), supporting 1000+ client requests daily.</li>
+                      <li>Collaborated in modernizing internal systems, improving system reliability and staff productivity by 25%.</li>
                     </ul>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </section>
             )
           },
