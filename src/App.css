@@ -1,0 +1,219 @@
+/* Modern, professional color palette for Farah Abdirahman portfolio */
+:root {
+  --background: #f5f7fa;
+  --primary-text: #22223b;
+  --accent: #4f8cff;
+  --secondary-accent: #00b894;
+  --card-bg: #fff;
+  --border: #e0e3e8;
+}
+
+body, html, #root {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--background);
+}
+
+body {
+  color: var(--primary-text);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.portfolio-root {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--background);
+  padding-bottom: 3rem;
+  box-sizing: border-box;
+}
+
+section, .profile-section, .skills-section, .experience-section, .awards-section, .speaking-section {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 var(--border);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tabbed-section {
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto 2.5rem auto;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  background: var(--card-bg);
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 2px 8px 0 var(--border);
+  padding: 1rem 0 0.5rem 0;
+}
+
+.tab-content-wrapper {
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0 0 0;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 var(--border);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid var(--accent);
+  box-shadow: 0 2px 8px 0 var(--border);
+}
+
+.profile-summary {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 var(--border);
+  border: 1px solid var(--border);
+  padding: 2rem 1.5rem;
+  min-width: 260px;
+  max-width: 340px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.card p {
+  margin: 0 0 0.5em 0;
+  font-size: 1.05em;
+}
+.card:hover {
+  box-shadow: 0 8px 32px 0 var(--accent);
+  transform: translateY(-6px) scale(1.04);
+  border-color: var(--accent);
+}
+
+.cert-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3em;
+}
+.cert-date, .cert-id {
+  font-size: 0.97em;
+  color: #888;
+  margin-bottom: 0.2em;
+}
+.cert-link {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: underline;
+  margin-top: 0.5em;
+  display: inline-block;
+}
+
+.skills-section ul, .experience-section ul, .awards-section ul, .speaking-section ul {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 700px;
+  padding-left: 1.2em;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--secondary-accent);
+}
+
+.button-accent {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75em 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.button-accent:hover {
+  background: var(--secondary-accent);
+}
+
+/* Remove default Vite/React demo styles */
+.logo, .read-the-docs, .card {
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  .tab-content-wrapper, .tabbed-section {
+    max-width: 99vw;
+    width: 99vw;
+  }
+  section, .profile-section, .skills-section, .experience-section, .awards-section, .speaking-section {
+    max-width: 99vw;
+    width: 99vw;
+    padding: 1.2rem 0.5rem;
+  }
+  .card {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 1.2rem 0.7rem;
+  }
+}
